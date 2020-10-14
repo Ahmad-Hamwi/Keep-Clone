@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="ultra_small">2dp</dimen>
+    <dimen name="super_small">4dp</dimen>
+    <dimen name="small">8dp</dimen>
+    <dimen name="medium">16dp</dimen>
+    <dimen name="large">32dp</dimen>
+    <dimen name="super_large">48dp</dimen>
+    <dimen name="ultra_large">64dp</dimen>
+
+
+
+</resources>

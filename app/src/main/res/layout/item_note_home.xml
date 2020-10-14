@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="note"
+            type="com.ahmadhamwi.keepclone.presentation.model.NoteUI" />
+
+        <import type="android.view.View" />
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/note_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/small"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:padding="@dimen/medium">
+
+            <TextView
+                android:id="@+id/note_title"
+                loadText="@{note.title}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/super_small"
+                android:text="Title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/medium"
+                android:visibility="@{note.title.empty ? View.GONE : View.VISIBLE}" />
+
+            <TextView
+                android:id="@+id/note_body"
+                loadText="@{note.body}"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/note_title"
+                android:layout_margin="@dimen/super_small"
+                android:text="This is a note"
+                android:textSize="@dimen/medium"
+                android:visibility="@{note.body.empty ? View.GONE : View.VISIBLE}" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
