@@ -1,6 +1,6 @@
 # Keep-Clone
 Keep Clone is an note taking app cloning Google's note taking app.
-Keep Clone is developed using MVVM Architecure and Uncle Bob's Clean Architecure.
+Keep Clone is developed using MVVM Architecure and Uncle Bob's Clean Architecure implemented using Java.
 
 #### Technologies used in the Android app development process:
 - Android Dagger Hilt for dependency injection.
